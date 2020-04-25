@@ -1,6 +1,6 @@
 # Mobile Flash Cards
 
-This project is bootstraped with expo, it was Udacity's second project in React Nano Degree program.
+This project is bootstraped with expo, it was Udacity's third project in React Nano Degree program.
 
 # A walk trough
 
