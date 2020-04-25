@@ -73,6 +73,7 @@ class StartQuiz extends React.Component{
                         <SnapBtn styles={styles} text='back' color={green}
                                  onPress = {this.back}   
                         />
+                         comment out the button below to resetAsyncStorage
                         {/* <SnapBtn styles={styles}text='Correct' color={green} onPress={()=>remove()}/> */}
                     </View>
                 </View>
