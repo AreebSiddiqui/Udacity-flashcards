@@ -33,14 +33,14 @@ class AddCard extends Component {
 			<KeyboardAvoidingView behavior = 'padding' style = {styles.container}>
 			
                 <View style = {styles.container}>
-            		<Text style = {styles.title}> Add your question?</Text>
+            		<Text style = {styles.title}> Add your question</Text>
 					<TextInput
                     style = {styles.input}
                     onChangeText={(question) => this.setState({question})}
                     value={this.state.question}
                     
                     ></TextInput>
-            		<Text style = {styles.title}>Add your answer:</Text>
+            		<Text style = {styles.title}>Answer to show!</Text>
 
 					<TextInput
                     style = {styles.input}
