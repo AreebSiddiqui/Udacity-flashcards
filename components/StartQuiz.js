@@ -83,7 +83,8 @@ class StartQuiz extends React.Component{
             <View style={styles.container}>
                 <View style={styles.card}>
                     <Text style={styles.question}>{number} / {decks[deck].questions.length}</Text>
-                    {   
+                    <Text style={styles.mainText}>{decks[deck].questions[quesNum].question}</Text>
+                    {/* {   
                         !this.state.displayQues
                         ?<Text style={styles.mainText}>{decks[deck].questions[quesNum].question}</Text>
                         :<Text style={styles.mainText}>{decks[deck].questions[quesNum].answer}</Text>
@@ -95,7 +96,7 @@ class StartQuiz extends React.Component{
                             onPress={()=>this.setState({displayQues:!this.state.displayQues})}/>
                         :<Anchor text='Show Question' style={styles.answer} 
                             onPress={()=>this.setState({displayQues:!this.state.displayQues})}/>
-                    }
+                    } */}
                     <SnapBtn styles={styles} text='Correct'  color={green} onPress={()=>this.submitAnswer("true")}/>
                     <SnapBtn styles={styles} text='Incorrect' color={red} onPress= {()=>this.submitAnswer("false")}/>
                 </View>

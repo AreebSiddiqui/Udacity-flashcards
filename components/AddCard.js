@@ -40,13 +40,13 @@ class AddCard extends Component {
                     value={this.state.question}
                     
                     ></TextInput>
-            		<Text style = {styles.title}>Answer to show!</Text>
+            		{/* <Text style = {styles.title}>Answer to show!</Text>
 
 					<TextInput
                     style = {styles.input}
                     onChangeText={(answer) => this.setState({answer})}
                     value={this.state.answer}
-                    ></TextInput>
+                    ></TextInput> */}
 
             		<Text style = {styles.title}>Please type true or false</Text>
 					<TextInput

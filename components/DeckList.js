@@ -6,6 +6,8 @@ import {receiveDecks} from '../actions'
 import { blue, white } from "../utils/colors";
 import {getLength} from '../utils/helper'
 class DeckList extends Component {
+    
+
 	componentDidMount() {
 		getDecks()
 		.then(decks => {this.props.dispatch(receiveDecks(decks))}
@@ -37,7 +39,7 @@ class DeckList extends Component {
 						</View>
 					);
 				})}
-			</ScrollView>
+            </ScrollView>
 		);
 	}
 }
