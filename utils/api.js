@@ -71,3 +71,4 @@ export function addCardToDeck(name, card) {
 export function remove() {
 	return AsyncStorage.removeItem(KEY_FLASHCARDS);
 }
+

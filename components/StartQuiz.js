@@ -4,6 +4,7 @@ import {blue,black,white,red,green} from '../utils/colors'
 import {connect} from 'react-redux'
 import SnapBtn from './SnapBtn'
 import Anchor from './Anchor'
+import {remove} from '../utils/api'
 
 class StartQuiz extends React.Component{
 
@@ -72,6 +73,7 @@ class StartQuiz extends React.Component{
                         <SnapBtn styles={styles} text='back' color={green}
                                  onPress = {this.back}   
                         />
+                        {/* <SnapBtn styles={styles}text='Correct' color={green} onPress={()=>remove()}/> */}
                     </View>
                 </View>
             )

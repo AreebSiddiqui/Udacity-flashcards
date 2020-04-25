@@ -15,15 +15,15 @@ import {
 
 class AddCard extends Component {
     state ={
-        ans: '',
-        ques: '',
-        correctAns:''
+        answer: '',
+        question: '',
+        correctAnswer:''
     }
     submitCardDeck = (deck) => {
-           const {ques,ans,correctAns} = this.state;
-           this.props.dispatch(addCard({ques,ans,correctAns,deck}))
-           addCardToDeck(deck,{ques,ans,correctAns})
-           this.setState({ ans: '',ques: '',correctAns:''})
+           const {question,answer,correctAnswer} = this.state;
+           this.props.dispatch(addCard({question,answer,correctAnswer,deck}))
+           addCardToDeck(deck,{question,answer,correctAnswer})
+           this.setState({ answer: '',question: '',correctAnswer:''})
            this.props.navigation.goBack(); 
     }
 	render() {
@@ -36,20 +36,20 @@ class AddCard extends Component {
             		<Text style = {styles.title}>Hey! Add card to deck.</Text>
 					<TextInput
                     style = {styles.input}
-                    onChangeText={(ques) => this.setState({ques})}
-                    value={this.state.ques}
+                    onChangeText={(question) => this.setState({question})}
+                    value={this.state.question}
                     placeholder="Add your question"
                     ></TextInput>
 					<TextInput
                     style = {styles.input}
-                    onChangeText={(ans) => this.setState({ans})}
-                    value={this.state.ans}
+                    onChangeText={(answer) => this.setState({answer})}
+                    value={this.state.answer}
                     placeholder="Add your answer"                    
                     ></TextInput>
 					<TextInput
                     style = {styles.input}
-                    onChangeText={(correctAns) => this.setState({correctAns})}
-                    value={this.state.correctAns}
+                    onChangeText={(correctAnswer) => this.setState({correctAnswer})}
+                    value={this.state.correctAnswer}
                     placeholder="Add the correct question"                    
                                          
                     ></TextInput>
