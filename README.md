@@ -11,7 +11,7 @@ This project is bootstraped with expo, it was Udacity's second project in React 
 
 ## How to get Started
 * Make sure you have npm and node installed on your machine.
-* Download the packages with `npm install`
+* Download the packages with `npm install` of `yarn install`
 * Run the project with `expo start`
 
 
