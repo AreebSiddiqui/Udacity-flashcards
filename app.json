@@ -1,0 +1,17 @@
+{
+  "name": "Navi",
+  "displayName": "Navi",
+  "expo": {
+    "name": "Navi",
+    "slug": "Navi",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
