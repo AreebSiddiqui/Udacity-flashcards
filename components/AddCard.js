@@ -14,7 +14,7 @@ import {
 } from "react-native";
 
 class AddCard extends Component {
-    state ={
+    state = {
         answer: '',
         question: '',
         correctAnswer:''

@@ -21,7 +21,7 @@ class StartQuiz extends React.Component{
         const {quesNum} = this.state
         const deck = this.props.route.params.entryId
         const decks = this.props.decks
-        const correct = decks[deck].questions[quesNum].correctAnswer
+        const correct = decks[deck].questions[quesNum].correctAnswer.toLowerCase()
 
         console.log('correct: ',typeof correct)
         console.log('answer: ',typeof answer)
