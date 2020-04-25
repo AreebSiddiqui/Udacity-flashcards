@@ -33,24 +33,27 @@ class AddCard extends Component {
 			<KeyboardAvoidingView behavior = 'padding' style = {styles.container}>
 			
                 <View style = {styles.container}>
-            		<Text style = {styles.title}>Hey! Add card to deck.</Text>
+            		<Text style = {styles.title}> Add your question?</Text>
 					<TextInput
                     style = {styles.input}
                     onChangeText={(question) => this.setState({question})}
                     value={this.state.question}
-                    placeholder="Add your question"
+                    
                     ></TextInput>
+            		<Text style = {styles.title}>Add your answer:</Text>
+
 					<TextInput
                     style = {styles.input}
                     onChangeText={(answer) => this.setState({answer})}
                     value={this.state.answer}
-                    placeholder="Add your answer"                    
                     ></TextInput>
+
+            		<Text style = {styles.title}>Please type true or false</Text>
 					<TextInput
                     style = {styles.input}
                     onChangeText={(correctAnswer) => this.setState({correctAnswer})}
                     value={this.state.correctAnswer}
-                    placeholder="Add the correct question"                    
+                                     
                                          
                     ></TextInput>
                     <TouchableOpacity style = {styles.submitBtn} onPress = {()=>this.submitCardDeck(deckCardName)}>
@@ -75,7 +78,7 @@ const styles = StyleSheet.create({
     title:{
         fontSize:22,
         color:'#333',
-        marginBottom:50,
+        
     },
     submitBtn:{
         borderWidth:0.5,

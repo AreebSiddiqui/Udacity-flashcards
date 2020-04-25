@@ -83,7 +83,6 @@ class StartQuiz extends React.Component{
             <View style={styles.container}>
                 <View style={styles.card}>
                     <Text style={styles.question}>{number} / {decks[deck].questions.length}</Text>
-                     <Text>Hello</Text>
                     {   
                         !this.state.displayQues
                         ?<Text style={styles.mainText}>{decks[deck].questions[quesNum].question}</Text>

@@ -3,10 +3,14 @@ import { Text, View, StyleSheet, TextInput } from "react-native";
 import { connect } from "react-redux";
 import SnapBtn from "./SnapBtn";
 import {white,black,blue,grey} from '../utils/colors'
+import {getLength} from '../utils/helper'
+
 class DeckView extends Component {
 	render() {
 		const deck = this.props.route.params.entryId;
 		const { decks } = this.props;
+		const questions =decks[deck].questions
+
 		if (deck === undefined) {
 			return (
 				<View>
@@ -17,7 +21,7 @@ class DeckView extends Component {
 		return (
 			<View style={styles.container}>
 				<Text style={styles.mainText} >{decks[deck].title}</Text>
-				<Text style = {styles.subText}>{decks[deck].questions.length}</Text>
+				<Text style = {styles.subText}>{questions? getLength(questions):null}</Text>
 				<SnapBtn styles={styles} text={"Add Card"} color = {grey}
 				onPress={()=> this.props.navigation.navigate('AddCard',{entryId: deck})}
 				>

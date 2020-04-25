@@ -13,7 +13,7 @@ import AddCard from './components/AddCard';
 import { Constants } from 'react-native-unimodules';
 import {black} from './utils/colors'
 import StartQuiz from './components/StartQuiz';
-
+import {setLocalNotification} from './utils/helper'
 const MaterialBottomTabs = createMaterialBottomTabNavigator();
 const Stack = createStackNavigator();
 
@@ -31,6 +31,9 @@ function TopStatusBar({backgroundColor, ...props}) {
 
 
 export default class App extends Component{
+  componentDidMount(){
+    setLocalNotification()
+  }
   render(){
       createBottomTab  = () => {
         return <MaterialBottomTabs.Navigator>
